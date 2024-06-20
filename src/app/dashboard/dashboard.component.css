@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-wrapper {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  border-radius: 10px;
+  background-color: #eaefeb;
+  height: 96vh;
+  margin: 0 auto;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.content-wrapper .date {
+  display: flex;
+  justify-content: end;
+  height: 10%;
+}
+
+.content-wrapper .date .datetime {
+  display: flex;
+  flex-direction: row;
+  outline: 0;
+  border: 0;
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px;
+  width: 180px;
+  margin: 8px;
+}
+
+.content-wrapper .date .datetime input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+}
+
+.content-wrapper .date .datetime i {
+  margin-top: 3px;
+  margin-right: 8px;
+  font-size: 18px;
+  color: #555;
+}
+
+.content-wrapper .headerBox {
+  height: 70px;
+  width: 100%;
+  font-family: "Indie Flower", cursive;
+  font-style: italic;
+}
+
+.content-wrapper .headerBox .title {
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper .headerBox .title .select {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: absolute;
+  right: 40px;
+  font-size: 14px;
+  gap: 5px;
+  font-weight: 200;
+}
+
+.content-wrapper .inputbox {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+.content-wrapper .entry {
+  font-family: "Indie Flower", cursive;
+  font-style: italic;
+  outline: 0;
+  width: 70%;
+  height: 35px;
+  padding: 8px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.content-wrapper .table-wrapper {
+  height: 320px;
+  margin: 0 auto;
+  width: 90%;
+  overflow-y: auto;
+}
+
+table {
+  overflow-y: auto;
+  margin: 0px 30px;
+  width: calc(100% - 60px);
+  border-collapse: collapse;
+}
+
+tr {
+  background-color: #f5f7f6;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.content-wrapper .checkbox {
+
+  border-radius: 8px 0px 0px 8px;
+  width: 10px;
+  height: 10px;
+}
+.chinput{
+  cursor: pointer;
+}
+
+.content-wrapper .statement {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.content-wrapper .ibutton {
+  width: 40px;
+}
+
+.ibutton {
+  text-align: center;
+  font-size: 12px;
+}
+
+.ibutton button {
+  width: 40px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  transition: color 0.2s, transform 0.2s;
+  border-radius: 5px;
+}
+
+.ibutton button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.edit {
+  background-color: #027bff;
+}
+.round {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.del {
+  background-color: #dc3545;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+.content-wrapper .footerBox {
+  width: 97%;
+  margin: 0 auto;
+  height: 100px;
+}
+.content-wrapper .footerBox .text {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 5px;
+  font-size: 12px;
+  width: 100%;
+  height: 20%;
+  color: #b8b9b7;
+}
+.content-wrapper .footerBox .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  height: 40%;
+  background-color: #f0ab4e;
+}
+.content-wrapper .footerBox .footer {
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  height: 40%;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #fdf8e2;
+  color: #cac5b2;
+}
+.num{
+  padding-right: 4px;
+}

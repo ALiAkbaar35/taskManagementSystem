@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-wrapper {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  width: 55%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-wrapper .heading {
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 400;
+}
+.content-wrapper .title {
+  padding-left: 57px;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #a7a6b6;
+}
+.content-wrapper .input {
+  padding: 8px 2px;
+  border: 0px;
+  outline: 0px;
+  width: 80%;
+  margin: 3px auto;
+  border-bottom: 1px solid black;
+}
+.input::placeholder {
+  color: #a7a6b6;
+  font-size: 18px;
+}
+
+.content-wrapper .table-wrapper {
+  height: 400px;
+  margin: 10px auto;
+  width: 80%;
+  overflow-y: auto;
+}
+
+table {
+  overflow-y: auto;
+  margin: 0px 10px;
+  width: calc(100% - 20px);
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+.content-wrapper .checkbox {
+  width: 20px;
+  height: 10px;
+}
+input[type="checkbox"] {
+  background-color: #d4d4d4;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.content-wrapper .statement {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.content-wrapper .ibutton {
+  width: 40px;
+}
+
+.ibutton {
+  text-align: center;
+  font-size: 12px;
+}
+
+.ibutton button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  transition: color 0.2s, transform 0.2s;
+  border-radius: 30px;
+  background-color: #8ed3ce;
+}
+
+.ibutton button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.content-wrapper .buttons {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  gap:20px;
+  justify-content: space-between;
+}
+.content-wrapper .buttons button {
+  width: calc(50% - 10px);
+  height: 40px;
+  background-color: #27a69b;
+  color: white;
+  font-size: 16px; 
+  font-weight:500;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.content-wrapper .buttons button:hover {
+    transform: scale(1.1);
+  background-color: #1d7a71;
+}
+.completed {
+  text-decoration: line-through;
+}

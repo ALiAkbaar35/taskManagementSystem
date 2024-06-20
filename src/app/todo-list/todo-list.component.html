@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="content-wrapper">
+        <div class="header">
+          <div class="heading">ToDo List App</div>
+          <div class="sub-heading">v1.0</div>
+        </div>
+        <div class="title">ToDo List</div>
+        <div class="text">Add An Item</div>
+        <div class="addbox">
+          <input
+            type="text"
+            name=""
+            id="input"
+            class="entry"
+            [(ngModel)]="task"
+          />
+          <div class="buttons">
+            <button class="up" (click)="edit ? update() : addTask()">
+              {{ edit ? "Update" : "Add" }}
+            </button>
+            <button class="cen" (click)="cencel()">Cancel</button>
+          </div>
+        </div>
+        <div class="tabel-wrapper">
+          <table>
+            <tbody *ngFor="let task of tasks; let k = index">
+              <tr>
+                <td class="checkbox">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      [(ngModel)]="task.isChecked"
+                      (click)="toggleTaskCompletion(task)"
+                    />
+                  </label>
+                </td>
+                <td class="statement" [ngClass]="{ completed: task.isChecked }">
+                  {{ task.task }}
+                </td>
+                <td class="ibutton">
+                  <button class="edit" (click)="edittask(k)">
+                    <i class="fa-solid fa-pen fa-2xs"></i>
+                  </button>
+                </td>
+                <td class="ibutton">
+                  <button class="del" (click)="deltask(k)">
+                    <i class="fa-solid fa-trash fa-xs"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

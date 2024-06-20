@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="content-wrapper">
+        <div class="heading">Todo-list</div>
+        <div class="title">Title</div>
+        <input
+          type="text"
+          class="input"
+          placeholder="Title"
+          [(ngModel)]="task"
+          (keyup.enter)="addTask()"
+        />
+        <div class="table-wrapper">
+          <table>
+            <tbody>
+              <tr *ngFor="let task of tasks; let k = index">
+                <td class="checkbox">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      class="chinput"
+                      [(ngModel)]="task.isChecked"
+                      (click)="toggleTaskCompletion(task)"
+                    />
+                  </label>
+                </td>
+                <td class="statement" [ngClass]="{ completed: task.isChecked }">
+                  {{ task.task }}
+                </td>
+                <td class="ibutton round">
+                  <button class="edit" (click)="deltask(k)">
+                    <i class="fa-solid fa-trash fa-xs"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="buttons">
+          <button (click)="CompletedDel()">Remove Completed</button>
+          <button (click)="RemAll()">Remove All</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

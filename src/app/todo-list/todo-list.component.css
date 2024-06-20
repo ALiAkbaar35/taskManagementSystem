@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-wrapper {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.content-wrapper .header {
+  padding: 10px 30px;
+  color: white;
+  width: 100%;
+  height: 40px;
+  background-color: #031a4e;
+  display: flex;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.content-wrapper .header .sub-heading {
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 11px;
+  color: #ffdbba;
+}
+
+.content-wrapper .title {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: inherit;
+  padding: 5px 30px;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+}
+
+.content-wrapper .text {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: inherit;
+  padding: 0px 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+}
+
+.content-wrapper .addbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+  gap: 20px;
+  padding: 0px 30px;
+}
+
+.content-wrapper .entry {
+  outline: 0;
+  width: calc(85% - 10px);
+  height: 30px;
+  padding: 8px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.content-wrapper .buttons {
+  width: calc(15% - 10px);
+  height: 30px;
+}
+
+.content-wrapper .buttons .up {
+  background-color: #027bff;
+}
+
+.content-wrapper .buttons .cen {
+  background-color: #dc3545;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.content-wrapper .buttons .cen:hover {
+  transform: scale(1.1);
+}
+
+.content-wrapper .buttons .up:hover {
+  background-color: #027bff;
+  transform: scale(1.1);
+}
+
+.content-wrapper .tabel-wrapper {
+  height: 400px;
+  overflow: auto;
+}
+
+table {
+  margin: 0px 30px;
+  width: calc(100% - 60px);
+  border-collapse: collapse;
+}
+tr {
+  border-radius: 8px;
+}
+th,
+td {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.content-wrapper .checkbox {
+  width: 10px;
+  height: 10px;
+}
+.content-wrapper .statement {
+  text-align: left;
+  padding-left: 10px;
+}
+.content-wrapper .ibutton {
+  width: 20px;
+}
+.ibutton {
+  text-align: center;
+  font-size: 12px;
+}
+
+.ibutton button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.ibutton button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.edit {
+  background-color: #027bff;
+}
+.del {
+  background-color: #dc3545;
+}
+
+input[type="checkbox"] {
+  background-color: #d4d4d4;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.completed {
+  text-decoration: line-through;
+}
